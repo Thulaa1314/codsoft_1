@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+</head>
+<body>
+    <header>
+        <h1>Thulasidhar R</h1>
+        <p>Web Developer | Designer | Freelancer</p>
+    </header>
+    
+    <section id="about">
+    <img src="Thula.jpg" alt="Your Image">
+    <div class="about-content">
+        <h2>About Me</h2>
+        <p>Hello! I’m <strong>Thulasidhar R</strong>, a passionate <strong>Web Developer, Designer, and Freelancer</strong> with a strong eye for aesthetics and functionality.</p>
+        <p>With expertise in <strong>HTML, CSS, JavaScript, and React</strong>, I specialize in creating seamless, responsive, and user-friendly websites. My focus is on UI/UX design, ensuring that every project is not just functional but visually compelling.</p>
+        <p>As a freelancer, I take pride in delivering high-quality solutions, whether it’s a <strong>personal portfolio, e-commerce platform, or a dynamic web application</strong>. I thrive on problem-solving, continuous learning, and pushing creative boundaries.</p>
+        <p>Let’s connect and bring your ideas to life! 🚀</p>
+    </div>
+</section>
+
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <section class="project">
+    <h2>AI-Based Next-Gen Educator</h2>
+    <p>The AI-Based Next-Gen Educator is an innovative platform that leverages artificial intelligence to enhance learning experiences. It provides personalized learning, real-time feedback, and AI-powered tutoring.</p>
+    <ul>
+        <li>📚 AI-Powered Adaptive Learning</li>
+        <li>🤖 Virtual AI Tutor</li>
+        <li>📊 Performance Analytics</li>
+        <li>🎙️ Voice & Chatbot Assistance</li><br>
+        <li>📝 Automated Assessments</li>
+    </ul>
+    <p>Empowering students with technology to learn smarter, faster, and better.</p>
+</section>
+
+    </section>
+    
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="Thula Sample Resume.pdf" download>Download My Resume</a>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: sample3@gmail.com</p>
+        <p>Phone: +91 99988877763</p>
+        <div class="social-links">
+    <a href="https://www.instagram.com/" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://x.com/" target="_blank">
+        <i class="fab fa-x-twitter"></i>
+    </a>
+</div>
+
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Thulasidhar. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript for triggering the fade-in effect when scrolling
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add fade-in class when the element is visible
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target); // Stop observing the element once it has faded in
+                }
+            });
+        }, {
+            threshold: 0.5 // 50% of the element must be visible to trigger the fade-in
+        });
+
+        // Target all sections you want to animate on scroll
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            observer.observe(section); // Observe each section for when it comes into view
+        });
+    </script>
+</body>
+</html>
